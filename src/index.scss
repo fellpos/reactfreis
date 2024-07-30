@@ -6,7 +6,15 @@
     padding: 0px;
 }
 
+body {
+    background-color: #F5F6FA;
+}
+
+a {
+    text-decoration: none;
+}
 .pagina {
+
     
     .cabecalho {
         display: flex;
@@ -18,6 +26,7 @@
         left: 0px;
         top: 0px;
         background-color: #6278f7;
+        
         
         .logo {
             position: absolute;
@@ -39,16 +48,16 @@
             font: 700 20px 'Roboto';
             color: #F5F6FA;
         }
+
         .abas{
             padding: 0px 100px;
             display: flex;
         
             gap: 15px;
 
-            h2 {
+            h2, h2:visited{
                 font: 400 20px 'Roboto';
                 color: #F5F6FA;
-                
                 
             }
   

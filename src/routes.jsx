@@ -1,6 +1,7 @@
 
 import Home from './pages/home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Sobre from './pages/sobre';
 
 export default function Navegacao() {
 
@@ -9,6 +10,7 @@ export default function Navegacao() {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='/sobre' element={<Sobre />} />
             </Routes>
         </BrowserRouter>
 

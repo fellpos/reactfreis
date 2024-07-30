@@ -1,12 +1,73 @@
 .pagina-home {
 
-    h1{
+    .titulo {
         font: 500 24px 'Roboto';
         color: black;
+        margin-top: 80px;
+        margin-left: 80px;
+    }
+
+    .blocos {
+        display: flex;
+        flex-direction: row;
+        margin-left: 50px;
     }
 
     .bloco {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 30px;
 
+        background-color: #ffffff;
+        margin-top: 20px;
+        width: 215px;
+        height: 158px;
+        border-radius: 12px;
+
+        padding: 10px;
+
+        .cor-amarela {
+
+            border-radius: 12px;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+
+            background-color: #FFCE37;
+
+        }
+
+        .cor-verde {
+
+            border-radius: 12px;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+
+            background-color: #B3FF37;
+
+        }
+
+        .cor-azul {
+
+            border-radius: 12px;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+
+            background-color: #37FFF3;
+
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font: 700 15px 'Roboto';
+        }
+
+        h3 {
+            font: 400 15px 'Roboto';
+        }
     }
 }
-
