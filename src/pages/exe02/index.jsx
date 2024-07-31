@@ -12,7 +12,7 @@ export default function Exe02() {
 
     function Converter() {
         let conta = Number(valorKilo * 1000)
-        SetTotal(conta)
+        SetTotal(conta.toFixed(2))
     }
 
     function TeclaPressionada(e) {

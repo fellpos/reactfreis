@@ -13,7 +13,7 @@ export default function Exe01() {
 
     function Total() {
         let conta = Number(valorPedido - valorPedido * valorCupom / 100)
-        SetTotal(conta)
+        SetTotal(conta.toFixed(2))
 
     }
 
