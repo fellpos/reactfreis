@@ -18,7 +18,9 @@ export default function Home() {
 
         <div className='abas'>
 
-          <h2 className=''> Início </h2>
+          <Link to='/'>
+            <h2 className=''> Início </h2>
+          </Link>
 
           <Link to='/sobre'>
             <h2 className=''> Sobre </h2>
@@ -32,35 +34,41 @@ export default function Home() {
 
         <div className='blocos'>
 
-          <div className='bloco'>
-            <div className='cor-amarela'>
+          <Link to='/exe01'>
+            <div className='bloco'>
+              <div className='cor-amarela'>
 
+              </div>
+
+              <h2>Cupom de desconto</h2>
+
+              <h3>Exercício 01</h3>
             </div>
+          </Link>
 
-            <h2>Cupom de desconto</h2>
+          <Link to='/exe02'>
+            <div className='bloco'>
+              <div className='cor-verde'>
 
-            <h3>Exercício 01</h3>
-          </div>
+              </div>
 
-          <div className='bloco'>
-            <div className='cor-verde'>
+              <h2>Converter Kg/gramas</h2>
 
+              <h3>Exercício 02</h3>
             </div>
+          </Link>
 
-            <h2>Converter Kg/gramas</h2>
+          <Link to='/exe03'>
+            <div className='bloco'>
+              <div className='cor-azul'>
 
-            <h3>Exercício 02</h3>
-          </div>
+              </div>
 
-          <div className='bloco'>
-            <div className='cor-azul'>
+              <h2>Valor total por quantidade</h2>
 
+              <h3>Exercício 03</h3>
             </div>
-
-            <h2>Valor total por quantidade</h2>
-
-            <h3>Exercício 03</h3>
-          </div>
+          </Link>
 
         </div>
       </section>

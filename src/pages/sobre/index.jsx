@@ -17,8 +17,12 @@ export default function Sobre() {
 
                 <div className='abas'>
 
-                    <h2 className=''> Início </h2>
-                    <h2 className=''> Sobre </h2>
+                    <Link to='/'>
+                        <h2 className=''> Início </h2>
+                    </Link>
+                    <Link to='/sobre'>
+                        <h2 className=''> Sobre </h2>
+                    </Link>
 
                 </div>
             </header>
