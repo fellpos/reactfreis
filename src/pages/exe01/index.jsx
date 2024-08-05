@@ -51,6 +51,7 @@ export default function Exe01() {
 
                 <i className="fa-solid fa-circle-arrow-left"></i>
                 <h1 className='titulo'>Exercício 01 - Cupom de desconto</h1>
+                
                 <div className='justify-center'>
                     <div className='underline-ex01'>
                         {/* Linha Coloridinha */}
