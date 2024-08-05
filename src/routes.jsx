@@ -5,6 +5,7 @@ import Sobre from './pages/sobre';
 import Exe01 from './pages/exe01';
 import Exe02 from './pages/exe02';
 import Exe03 from './pages/exe03';
+import Exe04 from './pages/exe04';
 
 export default function Navegacao() {
 
@@ -17,6 +18,7 @@ export default function Navegacao() {
                 <Route path='/exe01' element={<Exe01 />} />
                 <Route path='/exe02' element={<Exe02 />} />
                 <Route path='/exe03' element={<Exe03 />} />
+                <Route path='/exe04' element={<Exe04 />} />
             </Routes>
         </BrowserRouter>
 

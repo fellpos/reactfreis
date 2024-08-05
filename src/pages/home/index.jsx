@@ -70,6 +70,18 @@ export default function Home() {
             </div>
           </Link>
 
+          <Link to='/exe04'>
+            <div className='bloco'>
+              <div className='cor-roxo'>
+
+              </div>
+
+              <h2>Tempo Leitura Livro</h2>
+
+              <h3>Exercício 04</h3>
+            </div>
+          </Link>
+
         </div>
       </section>
     </div>
