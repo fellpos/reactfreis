@@ -18,7 +18,7 @@ export default function Exe01() {
     }
 
     function TeclaPressionada(e) {
-        if(e.key == 'Enter')
+        if(e.key === 'Enter')
         Total()
     }
 

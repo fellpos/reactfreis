@@ -23,7 +23,7 @@ export default function Exe03() {
     }
 
     function TeclaPressionada(e) {
-        if(e.key == 'Enter')
+        if(e.key === 'Enter')
         conta()
     }
 

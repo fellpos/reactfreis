@@ -16,7 +16,7 @@ export default function Exe02() {
     }
 
     function TeclaPressionada(e) {
-        if(e.key == 'Enter')
+        if(e.key === 'Enter')
         Converter()
     }
 

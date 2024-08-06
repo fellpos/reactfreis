@@ -10,11 +10,10 @@ export default function Exe04() {
     const [nomeLivro, SetNomeLivro] = useState('');
     const [paginas, SetPaginas ] = useState(0);
     const [tempoSeg, SetTempoSeg ] = useState(0);
-    const [conta, SetConta] = useState(0);
 
 
     function TeclaPressionada(e) {
-        if(e.key == 'Enter'){
+        if(e.key === 'Enter'){
 
         }
     }
