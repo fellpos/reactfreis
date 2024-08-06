@@ -67,7 +67,7 @@ export default function Exe04() {
                         <input type="text" value={nomeLivro} onChange={ e => SetNomeLivro(e.target.value)} placeholder='Insira o nome do livro' />
 
                         <h2><b>Total de páginas</b></h2>
-                        <input type="text" value={paginas} onChange={ e => SetPaginas(e.target.value)} />
+                        <input type="text" onChange={ e => SetPaginas(e.target.value)} />
 
                         <h2><b>Tempo em segundos de leitura por página</b></h2>
                         <input type="text" onKeyUp={TeclaPressionada} onChange={ e => SetTempoSeg(e.target.value)} />
