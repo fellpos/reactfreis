@@ -94,12 +94,6 @@ export default function Home() {
             </div>
           </Link>
 
-        </div>
-
-{/* Linha 2 --------------------------> */}
-
-        <div className='blocos'>
-
           <Link to='/exe06'>
             <div className='bloco'>
               <div className='cor-azul-escuro'>
@@ -112,8 +106,18 @@ export default function Home() {
             </div>
           </Link>
 
-        </div>
+          <Link to='/exe11'>
+            <div className='bloco'>
+              <div className='cor-ciano'>
 
+              </div>
+
+              <h2>Tabuada</h2>
+
+              <h3>Exercício 11</h3>
+            </div>
+          </Link>
+        </div>
 
       </section>
     </div>
