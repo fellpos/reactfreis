@@ -3,12 +3,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import Sobre from './pages/sobre';
 
-import Exe01 from './pages/exe01';
-import Exe02 from './pages/exe02';
-import Exe03 from './pages/exe03';
-import Exe04 from './pages/exe04';
-import Exe05 from './pages/exe05';
-import Exe06 from './pages/exe06';
+import Exe01 from './pages/exercicios/exe01';
+import Exe02 from './pages/exercicios/exe02';
+import Exe03 from './pages/exercicios/exe03';
+import Exe04 from './pages/exercicios/exe04';
+import Exe05 from './pages/exercicios/exe05';
+import Exe06 from './pages/exercicios/exe06';
 
 export default function Navegacao() {
 
