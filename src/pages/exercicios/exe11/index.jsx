@@ -18,14 +18,15 @@ export default function Exe11() {
         let resultados = []
 
         for (let i = 0; i < 10; i++) {
-            let temp = `${num} x ${ i+1 }= ${num * i+1}`
+            let temp = `${num} x ${i + 1}= ${num * i + 1}`
 
             resultados[i] = temp
-            
+
         }
 
         SetTabuada(resultados)
 
+        alert(0.1 + 0.2)
     }
 
     return (
@@ -78,12 +79,11 @@ export default function Exe11() {
                         <button onClick={mapear} > Executar </button>
 
                     </div>
-
-                <ul>
-                    {tabuada.map(Resultado => <li> {Resultado} </li>)}
-                </ul>
                 </div>
-                <h2 className='res'> A média do aluno é</h2>
+                    <h2 className='res'> A média do aluno é</h2>
+                    <ul>
+                        {tabuada.map(Resultado => <li> {Resultado} </li>)}
+                    </ul>
 
 
 
