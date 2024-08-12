@@ -7,16 +7,26 @@ import { useState } from 'react';
 
 export default function Exe05( ) {
 
-    const [nota1, SetNota1] = useState(1)
-    const [nota2, SetNota2] = useState(2)
-    const [nota3, SetNota3] = useState(3)
-    const [media, SetMedia] = useState(0)
+    const [nota1, SetNota1] = useState(0)
+    const [nota2, SetNota2] = useState(0)
+    const [nota3, SetNota3] = useState(0)
     const [passou, SetPassou] = useState(false)
-    const [soma, SetSoma] = useState(0)
 
-    function Somar( ) {
-        SetSoma(Number(nota1) + Number(nota2) + Number(nota3))
-        SetMedia(soma / 3)
+    const [media, SetMedia] = useState(0)
+
+    function Somar() {
+        let n1 = Number(nota1)
+        let n2 = Number(nota2)
+        let n3 = Number(nota3)
+
+        let media = (n1 + n2 + n3) / 3
+        SetMedia( media )
+
+        if(media >= 6) {
+            SetPassou(true)
+        } else {
+            SetPassou(false)
+        }
     }
 
     return (
@@ -72,12 +82,12 @@ export default function Exe05( ) {
                         <h2><b>Nota 3:</b></h2>
                         <input type="text" value={nota3} onChange={ e => SetNota3(e.target.value)}  />
 
-                        <button onDoubleClick={Somar()} > Executar </button>
+                        <button onClick={Somar} > Executar </button>
 
                     </div>
                 </div>
                 <h2 className='res'> A média do aluno é {media}</h2>
-                <h2 className='res'> O aluno passou? {passou} </h2>
+                <h2 className='res'> O aluno passou? {passou ? 'sim' : 'não'} </h2>
             </section>
         </div>
     );
