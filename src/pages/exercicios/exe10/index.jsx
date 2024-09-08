@@ -11,31 +11,30 @@ export default function Exe10() {
 
     const [altura, SetAltura] = useState(0);
     const [peso, SetPeso] = useState(0);
-    const [situacao, SetSituacao] = useState('');
     const [lista, SetLista] = useState([]);
 
     function Imc() {
 
         let imc = (peso / (altura**2)).toFixed(1);
-        
+        let sit = ''
         alert(imc)
 
         if (imc < 18.5) {
-            SetSituacao('Abaixo do peso');
+            sit = 'Abaixo do peso';
         } else if (imc >= 18.5 && imc <= 24.9) {
-            SetSituacao('Peso Saudável');
+            sit = 'Peso Saudável';
         } else if (imc >= 25.0 && imc <= 30.0) {
-            SetSituacao('Sobrepeso');
+            sit = 'Sobrepeso';
         } else if (imc >= 30.1 && imc <= 39.9) {
-            SetSituacao('Obeso');
+            sit = 'Obeso';
         } else if (imc > 40) {
-            SetSituacao('Obeso Mórbido');
+            sit = 'Obeso Mórbido';
         }
-        alert(situacao);
+        alert(sit)
         
-        let msg = `Altura: ${altura} | Peso: ${peso} | Situação: ${situacao}`;
+        let msg = `Altura: ${altura} | Peso: ${peso} | Situação: ${sit}`;
         SetLista(msg);
-        alert(msg);
+        alert(lista);
     }
 
     return (
@@ -73,13 +72,11 @@ export default function Exe10() {
                 </div>
 
                 <ul>
-                    {/* {lista.map((item, pos) =>
-                        <li key={pos}>
-                            <i className='fa fa-pen-to-square'></i> &nbsp;
-                            <i className='fa fa-trash-can'></i> &nbsp;
+                    {lista.map((item) =>
+                        <li>
                             {item}
                         </li>
-                    )} */}
+                    )}
                 </ul>
 
             </section>

@@ -3,7 +3,6 @@ import './index.scss';
 
 import Cabecalho from '../../../components/cabecalho';
 import CabecalhoExercicio from '../../../components/cabecalhoExercicio';
-import { useState } from 'react';
 
 
 
