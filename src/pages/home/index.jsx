@@ -1,4 +1,6 @@
 
+import Bloco from '../../components/blocos';
+import Cabecalho from '../../components/cabecalho';
 import './index.scss';
 import { Link } from 'react-router-dom';
 
@@ -7,27 +9,7 @@ export default function Home() {
 
   return (
     <div className="pagina-home pagina">
-      <header className="cabecalho">
-
-        <div className=''>
-
-          <img className='logo' src="/assets/images/logo.jfif" alt="" />
-          <h1> React FreiS</h1>
-
-        </div>
-
-        <div className='abas'>
-
-          <Link to='/'>
-            <h2 className=''> Início </h2>
-          </Link>
-
-          <Link to='/sobre'>
-            <h2 className=''> Sobre </h2>
-          </Link>
-
-        </div>
-      </header>
+      <Cabecalho />
 
       <section>
         <h1 className='titulo'> Escolha um treino...</h1>
@@ -35,88 +17,37 @@ export default function Home() {
         <div className='blocos'>
 
           <Link to='/exe01'>
-            <div className='bloco'>
-              <div className='cor-amarela'>
-
-              </div>
-
-              <h2>Cupom de desconto</h2>
-
-              <h3>Exercício 01</h3>
-            </div>
+            <Bloco cor='#FFCE37' titulo='Cupom de Desconto' subtitulo='Exercício 01' />
           </Link>
 
           <Link to='/exe02'>
-            <div className='bloco'>
-              <div className='cor-verde'>
-
-              </div>
-
-              <h2>Converter Kg/gramas</h2>
-
-              <h3>Exercício 02</h3>
-            </div>
+            <Bloco cor='#B3FF37' titulo='Converter Kg/gramas' subtitulo='Exercício 02' />
           </Link>
 
           <Link to='/exe03'>
-            <div className='bloco'>
-              <div className='cor-azul'>
-
-              </div>
-
-              <h2>Valor total por quantidade</h2>
-
-              <h3>Exercício 03</h3>
-            </div>
+            <Bloco cor='#37FFF3' titulo='Valor total por quantidade' subtitulo='Exercício 03' />
           </Link>
 
           <Link to='/exe04'>
-            <div className='bloco'>
-              <div className='cor-roxo'>
-
-              </div>
-
-              <h2>Tempo Leitura Livro</h2>
-
-              <h3>Exercício 04</h3>
-            </div>
+            <Bloco cor='#b12bf0' titulo='Tempo Leitura Livro' subtitulo='Exercício 04' />
           </Link>
 
           <Link to='/exe05'>
-            <div className='bloco'>
-              <div className='cor-vermelho'>
-
-              </div>
-
-              <h2>Passou ou Não?</h2>
-
-              <h3>Exercício 05</h3>
-            </div>
+            <Bloco cor='#f02b2b' titulo='Passou ou Não?' subtitulo='Exercício 05' />
           </Link>
 
           <Link to='/exe06'>
-            <div className='bloco'>
-              <div className='cor-azul-escuro'>
+            <Bloco cor='#2b3ff0' titulo='Salário Líquido' subtitulo='Exercício 06' />
+          </Link>
 
-              </div>
-
-              <h2>Salário Líquido</h2>
-
-              <h3>Exercício 06</h3>
-            </div>
+          <Link to='/exe10'>
+            <Bloco cor='#B75333' titulo='Calculo de IMC com histórico' subtitulo='Exercício 10' />
           </Link>
 
           <Link to='/exe11'>
-            <div className='bloco'>
-              <div className='cor-ciano'>
-
-              </div>
-
-              <h2>Tabuada</h2>
-
-              <h3>Exercício 11</h3>
-            </div>
+            <Bloco cor='#2bf0a8' titulo='Tabuada' subtitulo='Exercício 11' />
           </Link>
+    
         </div>
 
       </section>

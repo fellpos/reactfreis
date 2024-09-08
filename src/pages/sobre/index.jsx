@@ -1,31 +1,12 @@
+import Cabecalho from '../../components/cabecalho';
 import './index.scss';
-import { Link } from 'react-router-dom';
 
 export default function Sobre() {
 
 
     return (
         <div className="pagina-sobre pagina">
-            <header className="cabecalho">
-
-                <div className=''>
-
-                    <img className='logo' src="/assets/images/logo.jfif" alt="" />
-                    <h1> React FreiS</h1>
-
-                </div>
-
-                <div className='abas'>
-
-                    <Link to='/'>
-                        <h2 className=''> Início </h2>
-                    </Link>
-                    <Link to='/sobre'>
-                        <h2 className=''> Sobre </h2>
-                    </Link>
-
-                </div>
-            </header>
+            <Cabecalho />
 
             <section>
                 <h1 className='titulo'> Sobre</h1>

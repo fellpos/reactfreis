@@ -9,6 +9,7 @@ import Exe03 from './pages/exercicios/exe03';
 import Exe04 from './pages/exercicios/exe04';
 import Exe05 from './pages/exercicios/exe05';
 import Exe06 from './pages/exercicios/exe06';
+import Exe10 from './pages/exercicios/exe10';
 import Exe11 from './pages/exercicios/exe11';
 
 export default function Navegacao() {
@@ -29,6 +30,7 @@ export default function Navegacao() {
                 <Route path='/exe06' element={<Exe06 />} />
 
                 
+                <Route path='/exe10' element={<Exe10 />} />
                 <Route path='/exe11' element={<Exe11 />} />
 
             </Routes>

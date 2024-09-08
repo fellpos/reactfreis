@@ -1,9 +1,8 @@
 
+import Cabecalho from '../../../components/cabecalho';
+import CabecalhoExercicio from '../../../components/cabecalhoExercicio';
 import './index.scss';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
-<link rel="stylesheet" href="fontawesome" />
-
 
 export default function Exe04() {
 
@@ -20,44 +19,14 @@ export default function Exe04() {
 
     return (
         <div className="pagina-exe04 pagina">
-            <header className="cabecalho">
 
-                <div className=''>
-
-                    <img className='logo' src="/assets/images/logo.jfif" alt="" />
-                    <h1> React FreiS</h1>
-
-                </div>
-
-                <div className='abas'>
-
-                    <Link to='/'>
-                        <h2 className=''> Início </h2>
-                    </Link>
-
-                    <Link to='/sobre'>
-                        <h2 className=''> Sobre </h2>
-                    </Link>
-
-                </div>
-            </header>
+            <Cabecalho />
 
             <section>
 
-                <i className="fa-solid fa-circle-arrow-left"></i>
-                <h1 className='titulo'>Exercício 04 - Tempo Leitura Livro</h1>
-                
-                <div className='justify-center'>
-                    <div className='underline-ex04'>
-                        {/* Linha Coloridinha */}
-                    </div>
-                </div>
+            <CabecalhoExercicio cor='#B12BF0' titulo='Exercício 04 - Tempo Leitura Livro' enunciado='Implementar um programa em Javascript que <b>calcule</b> o tempo que um livro será lido por uma pessoa a partir do nome do livro, do total de páginas e do tempo em segundos de leitura por página.'/>
 
-                <div className='justify-center'>
-                    <div className='enunciado'>
-                        <h3>Implementar um programa em Javascript que <b>calcule</b> o tempo que um livro será lido por uma pessoa a partir do nome do livro, do total de páginas e do tempo em segundos de leitura por página.</h3>
-                    </div>
-                </div>
+                <i className="fa-solid fa-circle-arrow-left"></i>
                 
                 <div className='justify-center'>
 

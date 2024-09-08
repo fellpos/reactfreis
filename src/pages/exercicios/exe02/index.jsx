@@ -1,8 +1,9 @@
 
+import Cabecalho from '../../../components/cabecalho';
+import CabecalhoExercicio from '../../../components/cabecalhoExercicio'
 import './index.scss';
-import { Link } from 'react-router-dom';
+
 import { useState } from 'react';
-<link rel="stylesheet" href="fontawesome" />
 
 
 export default function Exe02() {
@@ -23,43 +24,13 @@ export default function Exe02() {
 
     return (
         <div className="pagina-exe02 pagina">
-            <header className="cabecalho">
-
-                <div className=''>
-
-                    <img className='logo' src="/assets/images/logo.jfif" alt="" />
-                    <h1> React FreiS</h1>
-
-                </div>
-
-                <div className='abas'>
-
-                    <Link to='/'>
-                        <h2 className=''> Início </h2>
-                    </Link>
-
-                    <Link to='/sobre'>
-                        <h2 className=''> Sobre </h2>
-                    </Link>
-
-                </div>
-            </header>
+            
+            <Cabecalho />
 
             <section>
 
-                <i className="fa-solid fa-circle-arrow-left"></i>
-                <h1 className='titulo'>Exercício 02 - Converter Kg/gramas</h1>
-                <div className='justify-center'>
-                    <div className='underline-ex02'>
-                        {/* Linha Coloridinha */}
-                    </div>
-                </div>
+            <CabecalhoExercicio cor='#B3FF37' titulo='Exercício 02 - Converter Kg/gramas' enunciado='Implementar um programa em Javascript para <b>converter kilos em gramas. </b>'/>
 
-                <div className='justify-center'>
-                    <div className='enunciado'>
-                        <h3>Implementar um programa em Javascript para <b>converter kilos em gramas. </b></h3>
-                    </div>
-                </div>
                 
                 <div className='justify-center'>
 

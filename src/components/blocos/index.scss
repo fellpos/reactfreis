@@ -1,0 +1,35 @@
+.comp-bloco {
+
+    .bloco {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 30px;
+
+        background-color: #ffffff;
+        margin-top: 20px;
+        width: 215px;
+        height: 158px;
+        border-radius: 12px;
+
+        padding: 10px;
+
+        .cor {
+            border-radius: 12px;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font: 700 15px 'Roboto';
+        }
+
+        h3 {
+            font: 400 15px 'Roboto';
+        }
+    }
+}
