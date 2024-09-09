@@ -1,57 +1,99 @@
 .pagina-exe10 {
 
-
-    .area-1 {
-        // border: 1px solid yellowgreen;   
+    .area-geral {
         display: flex;
-        justify-content: center;
-        width: 400px;
-        margin-left: 105px;
+        // border: 1px solid yellowgreen;
+        margin-top: 30px;
 
-        .blocos {
+        .area-1 {
+            margin-top: 10px;
             display: flex;
-            width: 100%;
-            // border: 1px solid yellowgreen;
-        }
-    
-        .bloco{
-            width: 250px;
-    
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: start;
-            margin-left: 10px;
-            
-            // border: 1px solid yellowgreen;
-        }
-    
-        .botao {
-            display: flex;
-            justify-content: end;
-        }
-    
-        .conta-bloco-1 {
-            // border: 1px solid yellowgreen;   
-    
-            border-radius: 10px;
-            padding: 15px 20px;
-            margin-top: 30px;
-            background-color: #FFF;
-            width: 470px;
-    
-            h2 {
-                font: 400 15px 'Roboto';
-            }
-    
-            input[type='text'] {
-                border: 1px solid #A5A5A5;
-                border-radius: 12px;
-                margin: 10px 0px;
-                padding: 10px;
-                outline: none;
+            justify-content: center;
+            width: 400px;
+            margin-left: 105px;
+
+            .blocos {
+                display: flex;
                 width: 100%;
-                font: 400 15px 'Roboto';
+                // border: 1px solid yellowgreen;
+            }
+
+            .bloco {
+                width: 250px;
+
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: start;
+                margin-left: 10px;
+
+                // border: 1px solid yellowgreen;
+            }
+
+            .botao {
+                display: flex;
+                justify-content: end;
+            }
+
+            .conta-bloco-1 {
+                // border: 1px solid yellowgreen;   
+
+                border-radius: 10px;
+                padding: 15px 20px;
+                background-color: #FFF;
+                width: 470px;
+
+                h2 {
+                    font: 400 15px 'Roboto';
+                }
+
+                input[type='text'] {
+                    border: 1px solid #A5A5A5;
+                    border-radius: 12px;
+                    margin: 10px 0px;
+                    padding: 10px;
+                    outline: none;
+                    width: 100%;
+                    font: 400 15px 'Roboto';
+
+                }
+            }
+        }
+        
+
+        .area-2 {
+            display: flex;
+
+            .lista-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+
                 
+                .lixeira {
+                    text-align: center;
+                    font-size: 30px;
+                    background-color: #6278F7;
+                    color: #FFF ;
+                    padding: 10px 15px;
+                    margin-left: 20px;
+                    border-radius: 5px;
+                }
+
+                li {
+                    align-self: center;
+                    margin-top: 10px 0px 0px 0px;
+                    
+                    width: 600px;
+                    background-color: #FFFFFF;
+                    
+                    padding: 20px;
+                    margin-left: 70px;
+                    border-radius: 10px;
+                    
+                    list-style-type: none;
+                    font: 700 16px 'Roboto';
+                }
             }
         }
     }

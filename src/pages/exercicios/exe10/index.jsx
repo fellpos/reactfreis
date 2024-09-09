@@ -15,9 +15,8 @@ export default function Exe10() {
 
     function Imc() {
 
-        let imc = (peso / (altura**2)).toFixed(1);
-        let sit = ''
-        alert(imc)
+        let imc = (peso / (altura ** 2)).toFixed(1);
+        let sit = '';
 
         if (imc < 18.5) {
             sit = 'Abaixo do peso';
@@ -30,11 +29,15 @@ export default function Exe10() {
         } else if (imc > 40) {
             sit = 'Obeso Mórbido';
         }
-        alert(sit)
-        
+
         let msg = `Altura: ${altura} | Peso: ${peso} | Situação: ${sit}`;
-        SetLista(msg);
-        alert(lista);
+        let resultados = [msg];
+        SetLista([...lista, resultados]);
+    }
+
+    function removerLista(pos) {
+        lista.splice(pos, 1);
+        SetLista([...lista]);
     }
 
     return (
@@ -44,40 +47,47 @@ export default function Exe10() {
 
             <section>
 
-
                 <CabecalhoExercicio cor='#B75333' titulo='Exercício 10 - Calculo de IMC com histórico' enunciado='Implemente um programa em Javascript que a partir da altura e do peso de uma pessoa, calcule o IMC e avalie a faixa correspondente a tabela ao lado. Ao final, apresente o IMC e a situação' />
 
+                <div className='area-geral'>
+                    <div className='area-1'>
 
-                <div className='area-1'>
+                        <div className='conta-bloco-1'>
+                            <div className="blocos">
 
-                    <div className='conta-bloco-1'>
+                                <div className='bloco'>
+                                    <h2><b>Altura</b></h2>
+                                    <input type="text" onChange={(e) => SetAltura(e.target.value)} />
+                                </div>
 
-                        <div className="blocos">
+                                <div className='bloco'>
 
-                            <div className='bloco'>
-                                <h2><b>Altura</b></h2>
-                                <input type="text" onChange={(e) => SetAltura(e.target.value)} />
+                                    <h2><b>Peso</b></h2>
+                                    <input type="text" onChange={(e) => SetPeso(e.target.value)} />
+                                </div>
                             </div>
 
-                            <div className='bloco'>
-
-                                <h2><b>Peso</b></h2>
-                                <input type="text" onChange={(e) => SetPeso(e.target.value)} />
+                            <div className="botao">
+                                <button onClick={Imc}> Executar</button>
                             </div>
-                        </div>
-                        <div className="botao">
-                            <button onClick={Imc}> Executar</button>
                         </div>
                     </div>
-                </div>
 
-                <ul>
-                    {lista.map((item) =>
-                        <li>
-                            {item}
-                        </li>
-                    )}
-                </ul>
+                    <div className='area-2'>
+                        <ul>
+                            {lista.map((item, pos) =>
+                                <div className='lista-item'>
+                                    <li key={pos}>
+                                        {item}
+                                    </li>
+                                    <div className='lixeira'>
+                                        <i className='fa fa-trash-can' onClick={() => removerLista(pos)}></i>
+                                    </div>
+                                </div>
+                            )}
+                        </ul>
+                    </div>
+                </div>
 
             </section>
         </div>

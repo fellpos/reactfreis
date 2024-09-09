@@ -45,7 +45,11 @@ export default function Exe11() {
                 <div className="secao">
                     <h2 className='res'>A tabuada de {num} é: </h2>
                     <ul>
-                        {tabuada.map(Resultado => <li> {Resultado} </li>)}
+                        {tabuada.map(Resultado =>
+                            <li>
+                                {Resultado}
+                            </li>
+                        )}
                     </ul>
                 </div>
 
